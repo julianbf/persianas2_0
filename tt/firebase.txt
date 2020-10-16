@@ -1,0 +1,28 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCWlus6F27Ub3m_oFFKMEOM9SZ-cWmeCOs",
+    authDomain: "persianas-dc9e4.firebaseapp.com",
+    databaseURL: "https://persianas-dc9e4.firebaseio.com",
+    projectId: "persianas-dc9e4",
+    storageBucket: "persianas-dc9e4.appspot.com",
+    messagingSenderId: "612527863660",
+    appId: "1:612527863660:web:66e201aa33c09120826549"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("path/to/serviceAccountKey.json")
+firebase_admin.initialize_app(cred)
